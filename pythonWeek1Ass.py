@@ -1,7 +1,8 @@
-# week 1 python assignment
+# Week 1 python assignment
+# This code below ask a user to enter two number and 
+# an operation to perform on the numbers and print the output
 
-userName = input("\nHello! Welcome. Please enter your first name: ")
-print("\nHello! ", userName, ". Welcome to my week 1 python assignment.\n My name is Thomas")
+print("\nHello! and Welcome to my python week 1 assignment.\n My name is Ayanda Thomas Mbuyisa")
 
 # first number input
 num1 = int(input("\nPlease Enter your first number: "))
