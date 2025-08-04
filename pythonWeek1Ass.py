@@ -1,40 +1,40 @@
-# Week 1 python assignment
-# This code below ask a user to enter two number and 
-# an operation to perform on the numbers and print the output
+# Week 1 Python Assignment
+# This script prompts the user to input two numbers and an arithmetic operation,
+# then performs the operation and displays the result.
 
-print("\nHello! and Welcome to my python week 1 assignment.\n My name is Ayanda Thomas Mbuyisa")
+print("\nHello! and Welcome to my Python Week 1 Assignment.\nMy name is Ayanda Thomas Mbuyisa")
 
-# first number input
+# Prompt the user to enter the first number
 num1 = int(input("\nPlease Enter your first number: "))
 
-# second number input
+# Prompt the user to enter the second number
 num2 = int(input("\nPlease Enter your second number: "))
 
-# operation input
-operation = input("\nPlease enter am operation e.g (+ , - , * , /) ")
+# Prompt the user to enter an arithmetic operation
+operation = input("\nPlease enter an operation e.g (+ , - , * , /): ")
 
-# check the operation validity and perform the operation if valid
-if operation == '+': # check if operation is plus (+)
+# Initialize a variable to store the result
+answer = None
+
+# Perform the selected operation
+if operation == '+':  # Addition
     answer = num1 + num2
 
-elif operation == '-': # check if operation is minus (-)
+elif operation == '-':  # Subtraction
     answer = num1 - num2
 
-elif operation == '*':  # check if operation is multiplication (*)
+elif operation == '*':  # Multiplication
     answer = num1 * num2
 
-elif operation == '/':  # check if operation is divide (/)
-   
-    if num2 != 0:  # check if second number is not equal to 0
+elif operation == '/':  # Division
+    if num2 != 0:  # Prevent division by zero
         answer = num1 / num2
     else:
-        print("Can not divide by 0")
+        print("Cannot divide by 0")
 
 else:
     print("Invalid operation")
 
-# if all goes well, system prints the results
-print(f"{num1} + {num2} = {answer}")
-
-
-
+# Display the result if a valid operation was performed
+if answer is not None:
+    print(f"\nResult: {num1} {operation} {num2} = {answer}")
